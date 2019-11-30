@@ -1,0 +1,11 @@
+{
+    "author": ["darkStag"],
+    "install_msg": "",
+    "name": "darktao",
+    "disabled": false,
+    "short": "",
+    "description": "Deliver Tao-te-Ching chapters to discord. Cog for red by twentysix. JSON provided by nyxyn.",
+    "tags": [],
+    "requirements": [],
+    "hidden": false
+}
