@@ -1,6 +1,7 @@
 import discord
 from redbot.core import commands, checks
 from redbot.core.config import Config
+
 import random
 import json
 
@@ -11,10 +12,10 @@ class darktao(commands.Cog):
     Deliver Tao-te-Ching chapters to discord.
     """
     @commands.command()
-    async def test(self, ctx, *, message):
+    async def tao(self, ctx):
         channel = ctx.channel
         chapters = get_chapters()
-
+        
         if len(sys.argv) is 1:
             random_chapter = random.randint(0, len(chapters) - 1)
             print_chapter(chapters, random_chapter)
