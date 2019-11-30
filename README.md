@@ -1,5 +1,4 @@
 # darkforge-cogs
-DarkForge Python v3 cogs.
-- for Red (twentysix) 
+DarkForge Python v3 cogs
 ————————————————————————
-》darkTao: Post Tao-te-Ching to channel.
+-darkTao: Post Tao-te-Ching to channel.
