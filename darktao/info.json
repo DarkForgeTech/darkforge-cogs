@@ -1,10 +1,10 @@
 {
     "author": ["darkStag"],
-    "install_msg": "",
+    "install_msg": "Thank you for installing!",
     "name": "darktao",
     "disabled": false,
-    "short": "",
-    "description": "Deliver Tao-te-Ching chapters to discord. Cog for red by twentysix. JSON provided by nyxyn.",
+    "short": "Tao-te-Ching to Discord.",
+    "description": "Post Tao-te-Ching chapters to discord. Cog for red by twentysix. JSON provided by nyxyn.",
     "tags": [],
     "requirements": [],
     "hidden": false
