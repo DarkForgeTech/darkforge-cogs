@@ -23,7 +23,7 @@ class darktao(commands.Cog):
 
         await ctx.maybe_send_embed(chapter_text)
 
-    async def get_chapters():
+    def get_chapters():
         with open(tao_text_location) as f:
         	return json.loads(f.read())
 
