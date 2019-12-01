@@ -31,6 +31,6 @@ class darktao(commands.Cog):
         self.bot = bot
         self.config = Config.get_conf(
             self,
-            identifier=000000001,
+            identifier=123456789,
             force_registration=True,
         )
