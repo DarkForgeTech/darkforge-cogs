@@ -1,9 +1,8 @@
+import random
+import json
 import discord
 from redbot.core import commands, checks
 from redbot.core.config import Config
-
-import random
-import json
 
 tao_text_location = "taoTeChing.json";
 
@@ -13,31 +12,16 @@ class darktao(commands.Cog):
     """
     @commands.command()
     async def tao(self, ctx):
-        channel = ctx.channel
         chapters = get_chapters()
-        
-        if len(sys.argv) is 1:
-            random_chapter = random.randint(0, len(chapters) - 1)
-            print_chapter(chapters, random_chapter)
-        else:
-            requested_chapter = int(sys.argv[1]) - 1
-        if requested_chapter < 0 or 
-            requested_chapter > len(chapters) - 1:
-print('Chapter argument must be between 1 and ' + str(len(chapters)))
-        else:
-            print_chapter(chapters, int(requested_chapter))
+        random_chapter = random.randint(0, len(chapters) - 1)
+        print_chapter(chapters, random_chapter)
 
     def print_chapter(chapters, index):
         chapter_obj = chapters[index]
         chapter_num = chapter_obj['chapter']
         chapter_text = chapter_obj['text']
 
-        embed = discord.Embed(color=0xEE2222, 
-            title='Chapter ' + str(chapter_num))
-        embed.add_field(name='field1', value=chapter_text ++ ' ... ')
-        embed.set_footer(text='Tao Te Ching ~ Laozi (4th Century BC)')   
-        await ctx.send(embed=embed)
-
+        await ctx.maybe_send_embed(chapter_text)
 
     def get_chapters():
         with open(tao_text_location) as f:
@@ -47,6 +31,6 @@ print('Chapter argument must be between 1 and ' + str(len(chapters)))
         self.bot = bot
         self.config = Config.get_conf(
             self,
-            identifier=000000002,
+            identifier=000004003,
             force_registration=True,
         )
