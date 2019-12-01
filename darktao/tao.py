@@ -25,7 +25,7 @@ class darktao(commands.Cog):
 
     def get_chapters():
         with open(tao_text_location) as f:
-        return json.loads(f.read())
+        	return json.loads(f.read())
 
     def __init__(self, bot):
         self.bot = bot
