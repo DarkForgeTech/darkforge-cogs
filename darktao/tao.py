@@ -23,7 +23,7 @@ class darktao(commands.Cog):
             requested_chapter = int(sys.argv[1]) - 1
         if requested_chapter < 0 or 
             requested_chapter > len(chapters) - 1:
-        print('Chapter argument must be between 1 and ' + str(len(chapters)))
+print('Chapter argument must be between 1 and ' + str(len(chapters)))
         else:
             print_chapter(chapters, int(requested_chapter))
 
@@ -34,7 +34,7 @@ class darktao(commands.Cog):
 
         embed = discord.Embed(color=0xEE2222, 
             title='Chapter ' + str(chapter_num))
-        embed.add_field(name='page1', value=chapter_text)
+        embed.add_field(name='field1', value=chapter_text ++ ' ... ')
         embed.set_footer(text='Tao Te Ching ~ Laozi (4th Century BC)')   
         await ctx.send(embed=embed)
 
@@ -47,6 +47,6 @@ class darktao(commands.Cog):
         self.bot = bot
         self.config = Config.get_conf(
             self,
-            identifier=000000001,
+            identifier=000000002,
             force_registration=True,
         )
