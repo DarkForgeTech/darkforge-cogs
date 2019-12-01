@@ -5,20 +5,18 @@ from redbot.core import commands, checks
 from redbot.core.config import Config
 
 tao_text_location = "taoTeChing.json";
+with open(tao_text_location) as f:
+    chapters = json.loads(f.read()
 
 class darktao(commands.Cog):
     """
     Deliver Tao-te-Ching chapters to discord.
     """
+
     @commands.command()
     async def tao(self, ctx):
-        chapters = get_chapters()
         random_chapter = random.randint(0, len(chapters) - 1)
         print_chapter(chapters, random_chapter)
-
-    async def get_chapters():
-        with open(tao_text_location) as f:
-        	return json.loads(f.read())
 
     async def print_chapter(chapters, index):
         chapter_obj = chapters[index]
