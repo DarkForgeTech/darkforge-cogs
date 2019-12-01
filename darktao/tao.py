@@ -27,7 +27,7 @@ class darktao(commands.Cog):
         with open(tao_text_location) as f:
         	return json.loads(f.read())
 
-    async def __init__(self, bot):
+    def __init__(self, bot):
         self.bot = bot
         self.config = Config.get_conf(
             self,
