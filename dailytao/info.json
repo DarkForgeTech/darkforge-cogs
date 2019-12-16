@@ -1,0 +1,11 @@
+{
+    "author": ["DarkStag"],
+    "install_msg": "",
+    "name": "dailytao",
+    "disabled": false,
+    "short": "",
+    "description": "Delivers Tao te Chibg to Channel",
+    "tags": [],
+    "requirements": [],
+    "hidden": false
+}
