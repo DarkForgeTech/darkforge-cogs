@@ -1,0 +1,18 @@
+{
+    "author": [
+        "DarkStag"
+    ],
+    "description": "Create 80s themed GoT scenes from channel messages. (Based on weeedcog bu luna.)",
+    "disabled": false,
+    "hidden": false,
+    "install_msg": "This cog comes with bundled data! (TTF fonts, PNG characters and backgrounds.)",
+    "min_python_version": [
+        3,
+        7,
+        0
+    ],
+    "name": "gotmix",
+    "requirements": [],
+    "short": "Create GoT scenes from channel messages. (Based on weeedcog by luna.)",
+    "tags": []
+}
